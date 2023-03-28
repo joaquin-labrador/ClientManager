@@ -1,9 +1,11 @@
 # ninja log v5
-3	138	7015488465898361	CMakeFiles/untitled3.dir/main.c.obj	ff82e97fe55fb167
-122	279	7015492539755828	untitled3.exe	39b8c1d8d41ed3fc
-1	344	7015603745760612	build.ninja	455b55d6b3ed6666
-4	121	7015492538232560	CMakeFiles/untitled3.dir/ClientList/client.c.obj	57efdcd405f08554
 27	223	7015604701983045	CMakeFiles/untitled3.dir/main.c.obj	ff82e97fe55fb167
-5	244	7015604702257224	CMakeFiles/untitled3.dir/ClientList/clientList.c.obj	5b40e80308223975
-17	262	7015604702477167	CMakeFiles/untitled3.dir/ClientList/client.c.obj	57efdcd405f08554
 262	595	7015604705748169	untitled3.exe	67cdca788dc565c3
+1	344	7015778079210202	build.ninja	455b55d6b3ed6666
+17	262	7015604702477167	CMakeFiles/untitled3.dir/ClientList/client.c.obj	57efdcd405f08554
+5	244	7015604702257224	CMakeFiles/untitled3.dir/ClientList/clientList.c.obj	5b40e80308223975
+6	201	7015778126769263	CMakeFiles/untitled3.dir/src/ClientList/client.c.obj	78cfa9446ce08129
+0	231	7015778126999249	CMakeFiles/untitled3.dir/src/ClientList/clientList.c.obj	b857e43bafdffac0
+3	108	7015778372066723	CMakeFiles/untitled3.dir/src/main.c.obj	a8b1a81547182346
+110	425	7015778375171864	untitled3.exe	fb3faa9b46f4c287
+4	518	7016754718683997	CMakeFiles/untitled3.dir/src/ClientList/client.c.obj	78cfa9446ce08129

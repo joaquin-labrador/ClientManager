@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "main.h"
-#include "../ClientList/client.h"
+#include "ClientList/clientList.h"
+#include "ClientList/client.h"
 
 
 int main() {

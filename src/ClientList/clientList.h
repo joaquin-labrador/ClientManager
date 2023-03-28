@@ -21,7 +21,7 @@ typedef struct Node {
 Node *createNode(Client client);
 
 
-void addClientToList(Node **head, Client client);
+void addClientToStart(Node **head, Client client);
 
 
 void sortListByName(Node **list);
