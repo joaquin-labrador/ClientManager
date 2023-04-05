@@ -1,13 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "main.h"
-#include "ClientList/clientList.h"
-#include "ClientList/client.h"
 
 
 int main() {
 
     int menuOption;
+    Node *clientList = NULL;
+
+    createListOfClient(&clientList);
 
     do {
         menu();
@@ -26,7 +27,9 @@ int main() {
                 printf("Search for a client\n");
                 break;
             case 4:
-                showAllClients();
+                printf("Print all clients\n");
+
+                showAllClientsFromList(clientList);
                 break;
             case 5:
                 exit(0);

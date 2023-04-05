@@ -12,6 +12,13 @@ typedef struct Client {
     char dni[10];
 } Client;
 
+// list data
+
+typedef struct Node {
+    Client client;
+    struct Node *next;
+} Node;
+
 // Prototypes functions
 void saveClient();
 
@@ -26,3 +33,12 @@ void printClient(Client client);
 int quantityClients();
 
 FILE *openClientFile(char *mode);
+
+void insertClientInListSortByName(Node **node, Client client);
+
+Node *createNode(Client client);
+
+
+int createListOfClient(Node **node);
+
+void showAllClientsFromList(Node *node);

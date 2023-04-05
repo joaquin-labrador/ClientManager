@@ -3,4 +3,4 @@ project(ClientManager C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(untitled3 src/main.c src/main.h src/ClientList/client.c src/ClientList/client.h src/ClientList/clientList.c src/ClientList/clientList.h)
+add_executable(untitled3 src/main.c src/main.h src/ClientList/client.c src/ClientList/client.h)

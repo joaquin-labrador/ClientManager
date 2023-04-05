@@ -61,12 +61,6 @@ build CMakeFiles/untitled3.dir/src/ClientList/client.c.obj: C_COMPILER__untitled
   OBJECT_DIR = CMakeFiles\untitled3.dir
   OBJECT_FILE_DIR = CMakeFiles\untitled3.dir\src\ClientList
 
-build CMakeFiles/untitled3.dir/src/ClientList/clientList.c.obj: C_COMPILER__untitled3_Debug C$:/Users/Labrix/Desktop/ClientManager/src/ClientList/clientList.c || cmake_object_order_depends_target_untitled3
-  DEP_FILE = CMakeFiles\untitled3.dir\src\ClientList\clientList.c.obj.d
-  FLAGS = -g -std=gnu99
-  OBJECT_DIR = CMakeFiles\untitled3.dir
-  OBJECT_FILE_DIR = CMakeFiles\untitled3.dir\src\ClientList
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target untitled3
@@ -75,7 +69,7 @@ build CMakeFiles/untitled3.dir/src/ClientList/clientList.c.obj: C_COMPILER__unti
 #############################################
 # Link the executable untitled3.exe
 
-build untitled3.exe: C_EXECUTABLE_LINKER__untitled3_Debug CMakeFiles/untitled3.dir/src/main.c.obj CMakeFiles/untitled3.dir/src/ClientList/client.c.obj CMakeFiles/untitled3.dir/src/ClientList/clientList.c.obj
+build untitled3.exe: C_EXECUTABLE_LINKER__untitled3_Debug CMakeFiles/untitled3.dir/src/main.c.obj CMakeFiles/untitled3.dir/src/ClientList/client.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\untitled3.dir

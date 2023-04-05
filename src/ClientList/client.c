@@ -104,3 +104,61 @@ FILE *openClientFile(char *mode) {
     }
     return file;
 }
+
+void insertClientInListSortByName(Node **node, Client client) {
+    Node *newNode = createNode(client);
+    if (*node == NULL) {
+        *node = newNode;
+    } else {
+        Node *cNode = *node;
+        Node *pNode = NULL;
+
+        while (cNode != NULL && strcmp(cNode->client.name, client.name) < 0) {
+            pNode = cNode;
+            cNode = cNode->next;
+        }
+
+        if (pNode == NULL) {
+            newNode->next = *node;
+            *node = newNode;
+        } else {
+            if (cNode == NULL) {
+                pNode->next = newNode;
+            } else {
+                newNode->next = cNode;
+                pNode->next = newNode;
+            }
+        }
+    }
+}
+
+
+Node *createNode(Client client) {
+    Node *node = (Node *) malloc(sizeof(Node));
+    node->client = client;
+    node->next = NULL;
+    return node;
+}
+
+int createListOfClient(Node **node) {
+    FILE *file = openClientFile("rb");
+
+    Client client;
+
+    while (fread(&client, sizeof(Client), 1, file)) {
+        insertClientInListSortByName(node, client);
+    }
+
+    fclose(file);
+
+    return quantityClients();
+}
+
+void showAllClientsFromList(Node *node) {
+    printf("Quantity of clients: %d\n", quantityClients());
+
+    while (node != NULL) {
+        printClient(node->client);
+        node = node->next;
+    }
+}

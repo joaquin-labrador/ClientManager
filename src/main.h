@@ -4,7 +4,7 @@
 
 #ifndef UNTITLED3_MAIN_H
 #define UNTITLED3_MAIN_H
-
+#include "ClientList/client.h"
 
 // Function prototypes
 
